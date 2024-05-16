@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #202020;
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+#todo-input {
+  padding: 1rem 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+#todo-input:focus {
+  border: 2px solid rgb(85, 255, 85);
+}
+
+.btn-submit {
+  padding: 1.1rem 1.5rem;
+  border-radius: 5px;
+  background-color: rgb(0, 110, 255);
+  border: none;
+  transition: background-color 0.1s ease-in-out;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: rgb(0, 60, 255);
+}
+
+#todo-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+#todo-list li {
+  background: #f9f9f9;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#todo-list li button {
+  border: none;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out;
+}
+
+#todo-list li .btn-edit {
+  background: rgb(12, 255, 24);
+  margin-left: auto;
+  margin-right: 2px;
+}
+
+#todo-list li .btn-edit:hover{
+  background: rgb(78, 255, 87);
+}
+
+#todo-list li .btn-delete {
+  background: red;
+}
+
+#todo-list li .btn-delete:hover {
+  background-color: rgb(255, 98, 98);
+}
+
+#todo-list li .btn-save {
+    background: blue;
+}
